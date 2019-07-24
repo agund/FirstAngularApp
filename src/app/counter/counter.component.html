@@ -1,0 +1,18 @@
+<div style="padding: 2em">
+  <h1> {{header}}</h1>
+
+  <p>Starwars Name: {{googleCode.name}}</p>
+  <p>Harrfarbe : {{googleCode.hair_color}}</p>
+  <p>Augenfarbe : {{googleCode.eye_color}}</p>
+  <p>Geschlecht : {{googleCode.gender}}</p>
+
+
+      <!--<input #box (keyup)="onEnter(box.value)" name="uid" id="uid" value="{{userid}}"  class="form-control" type="number" style="margin: 1em"  required />-->
+      <input [(ngModel)]="userid"   class="form-control" type="number" style="margin: 1em"  required />
+
+
+      <div style="padding: 1em;">{{counter}}</div>
+      <button  (click)="counterNext()" style="margin: 1em;" class="btn btn-primary" >Klick</button>
+
+     <button  (click)="getGoogle()" style="margin: 1em;" class="btn btn-primary" >Google</button>
+</div>
